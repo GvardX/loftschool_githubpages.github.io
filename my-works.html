@@ -14,7 +14,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="content">
+      <div class="content my-works__header">
         <header class="header">
           <div class="top-line">
             <ul class="socials">
@@ -48,30 +48,23 @@
               <svg class="arrow-down__img">
                 <use xlink:href="assets/images/sprite.svg#arrow_down"></use>
               </svg></a></div>
-        </header>
-        <section class="my-works">
-          <div class="triangle my-works__triangle">
+          <div class="triangle about__triangle">
             <svg class="triangle-pic" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none">
               <polygon class="left" points="0,0 0,86 500.8,86 500.8,75.5"></polygon>
               <polygon class="right" points="1000,0 1000,86 500,86 500,75.5"></polygon>
             </svg>
           </div>
-          <div class="my-works__title bg-title">
-            <div class="bg-title__img">
-              <svg class="bg-icon">
-                <use xlink:href="assets/images/sprite.svg#works_header"></use>
-              </svg>
-            </div>
-            <h2 class="h2 bg-title__text main-title my-works__text line-works">Мои работы</h2>
+        </header>
+        <section class="my-works">
+          <div class="my-works__title bg-title bg-title_size_big">
+            <h2 class="h2 bg-title__text main-title line-works">Мои работы</h2>
           </div>
           <div class="slider">
             <div class="slider-info">
               <div class="slider-info__wrap">
                 <h3 class="h3 main-title slider-info__title">Сайт школы онлайн образования</h3>
                 <div class="slider-info__lang">
-                   Html, css, javascript</div>
-                <button class="slider-info-btn button_radius"><a class="slider-info-btn__link" href="#">
-                     Посмотреть сайт</a></button>
+                   Html, css, javascript</div><a class="slider-info-btn__link button_radius slider_sign" href="#"><span class="slider-info-btn">Посмотреть сайт</span></a>
               </div>
             </div>
             <div class="slider-show">
@@ -96,20 +89,10 @@
         <section class="form">
           <div class="form__wrap">
             <div class="form__title bg-title bg-title_size_big">
-              <div class="bg-title__img">
-                <svg class="bg-icon">
-                  <use xlink:href="assets/images/sprite.svg#about_header"></use>
-                </svg>
-              </div>
-              <h2 class="h2 bg-title__text main-title form__text line-about-talk">Что обо мне говорят</h2>
+              <h2 class="h2 form__text main-title form__text line-about-talk">Что обо мне говорят</h2>
             </div>
             <div class="form__comments comments">
               <div class="comments-block">
-                <div class="comments__quotes">
-                  <svg class="quotes-icon">
-                    <use xlink:href="assets/images/sprite.svg#quotes"></use>
-                  </svg>
-                </div>
                 <p class="p comments__paragraph">
                    Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!</p>
                 <div class="comments__man-dates man-dates">
@@ -120,11 +103,6 @@
                 </div>
               </div>
               <div class="comments-block">
-                <div class="comments__quotes">
-                  <svg class="quotes-icon">
-                    <use xlink:href="assets/images/sprite.svg#quotes"></use>
-                  </svg>
-                </div>
                 <p class="p comments__paragraph">
                    Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!</p>
                 <div class="comments__man-dates man-dates">       
@@ -143,12 +121,7 @@
                 <input class="input" type="email" name="name" placeholder="Email">
                 <textarea class="input textarea" name="comment" placeholder="Ваше сообщение"></textarea>
               </div>
-              <div class="form_btns-block">
-                <button class="slider-info-btn form_btn"><span class="slider-info-btn__link">
-                     Отправить</span></button>
-                <button class="slider-info-btn form_btn"><span class="slider-info-btn__link">
-                     Очистить</span></button>
-              </div>
+              <div class="form_btns-block">                           <a class="slider-info-btn__link button_radius form_btn" href="#"><span class="slider-info-btn">Отправить</span></a><a class="slider-info-btn__link form_btn" href="#"><span class="slider-info-btn">Очистить</span></a></div>
             </form>
             <div class="arrow-up">
               <svg class="arrow-down__img">
@@ -162,10 +135,10 @@
         <div class="footer-row border-line">
           <div class="footer-col">
             <ul class="main-menu main-menu__footer">
-              <li class="main-menu__item main-menu__item_footer"><a class="main-menu__link" href="#">Мои работы</a></li>
-              <li class="main-menu__item main-menu__item_footer"><a class="main-menu__link" href="#">Обо мне</a></li>
-              <li class="main-menu__item main-menu__item_footer"><a class="main-menu__link" href="#">Блог</a></li>
-              <li class="main-menu__item main-menu__item_footer"><a class="main-menu__link" href="#">Авторизация</a></li>
+              <li class="main-menu__item main-menu__item_footer"><a class="main-menu__link" href="my-works.html">Мои работы</a></li>
+              <li class="main-menu__item main-menu__item_footer"><a class="main-menu__link" href="about.html">Обо мне</a></li>
+              <li class="main-menu__item main-menu__item_footer"><a class="main-menu__link" href="blog.html">Блог</a></li>
+              <li class="main-menu__item main-menu__item_footer"><a class="main-menu__link" href="index.html">Авторизация</a></li>
             </ul>
           </div>
           <div class="footer-col">
@@ -186,8 +159,8 @@
           </div>
         </div>
         <div class="footer-row">
-          <div class="footer-col"><span class="footer-text"></span>Я веб-разработчик из Курска, и этот сайт я сделал в рамках<br> <span class="span">обучения в Школе онлайн образования LoftSchool. </span></div>
-          <div class="footer-col"><span class="footer-text"></span>© Владимир Астахов | создано с любовью в LoftSchool | 2016</div>
+          <div class="footer-col footer-col_marg-bot"><span class="footer-text"></span>Я веб-разработчик из Курска, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.</div>
+          <div class="footer-col"><span class="footer-text"></span>© Андрей Азимов | создано с любовью в LoftSchool | 2016</div>
         </div>
       </footer>
     </div>
