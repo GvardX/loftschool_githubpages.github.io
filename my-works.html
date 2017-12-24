@@ -32,9 +32,9 @@
                   </svg></a></li>
             </ul>
             <div class="hamburger header__menu">
-              <svg class="hamburger__img">
-                <use xlink:href="assets/images/sprite.svg#hamburger"></use>
-              </svg>
+              <div class="hamburger__line"></div>
+              <div class="hamburger__line"></div>
+              <div class="hamburger__line">       </div>
             </div>
           </div>
           <div class="portfolio">
@@ -44,7 +44,7 @@
               <div class="span about-me__description">Личный сайт веб-разработчика</div>
             </div>
           </div>
-          <div class="arrow-down header__arrow"><a class="arrow-down__link" href="#">
+          <div class="arrow-down header__arrow"><a class="arrow-down__link" href="#my-works">
               <svg class="arrow-down__img">
                 <use xlink:href="assets/images/sprite.svg#arrow_down"></use>
               </svg></a></div>
@@ -55,7 +55,7 @@
             </svg>
           </div>
         </header>
-        <section class="my-works">
+        <section id="my-works">
           <div class="my-works__title bg-title bg-title_size_big">
             <h2 class="h2 bg-title__text main-title line-works">Мои работы</h2>
           </div>
@@ -116,9 +116,9 @@
             <form class="form_connect connect">
               <div class="connect__bg"></div>
               <div class="connect__content">
-                <h3 class="h3 main-title text__subtitle main-title">Связаться со мной</h3>
-                <input class="input" type="text" name="name" placeholder="Имя">
-                <input class="input" type="email" name="name" placeholder="Email">
+                <h3 class="h3 main-title text__subtitle main-title connect__title">Связаться со мной</h3>
+                <input class="input input_my-works" type="text" name="name" placeholder="Имя">
+                <input class="input input_my-works" type="email" name="name" placeholder="Email">
                 <textarea class="input textarea" name="comment" placeholder="Ваше сообщение"></textarea>
               </div>
               <div class="form_btns-block">                           <a class="slider-info-btn__link button_radius form_btn" href="#"><span class="slider-info-btn">Отправить</span></a><a class="slider-info-btn__link form_btn" href="#"><span class="slider-info-btn">Очистить</span></a></div>
