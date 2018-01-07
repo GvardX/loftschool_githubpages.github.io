@@ -14,6 +14,12 @@
   </head>
   <body>
     <div class="wrapper">
+      <div class="preloader">
+        <div class="preloader__spinner">
+          <div class="preloader__animation"></div>
+          <div class="preloader__percents">0%</div>
+        </div>
+      </div>
       <div class="content welcome-content">
         <section class="welcome">
           <div class="parallax" id="parallax">
@@ -28,66 +34,69 @@
             <div class="parallax__layer"><img class="parallax__img" src="assets/images/bg-parallax_img_01.png"></div>
           </div>
           <button class="button sign-in"><span class="span">Авторизоватьcя</span></button>
-          <div class="info-container">
-            <div class="block-info">
-              <div class="about-me__wrapper">
-                <div class="about-me">
-                  <div class="about-me__img-rounded img-rounded img-rounded_size_big"><img src="assets/images/avatar.png" alt="avatar"></div>
-                  <h4 class="h4 about-me__title">Андрей Азимов</h4><span class="about-me__description">Личный сайт веб-разработчика</span>
-                </div>
-                <ul class="socials">
-                  <li class="socials__item socials__item_green"><a class="socials__link" href="https://vk.com/sakhalinkholmsk"> 
-                      <svg class="socials__img soc-icon">
-                        <use xlink:href="assets/images/sprite.svg#vk"></use>
-                      </svg></a></li>
-                  <li class="socials__item socials__item_green"><a class="socials__link" href="https://vk.com/sakhalinkholmsk"> 
-                      <svg class="socials__img soc-icon">
-                        <use xlink:href="assets/images/sprite.svg#github"></use>
-                      </svg></a></li>
-                  <li class="socials__item socials__item_green"><a class="socials__link" href="https://vk.com/sakhalinkholmsk"> 
-                      <svg class="socials__img soc-icon">
-                        <use xlink:href="assets/images/sprite.svg#in"></use>
-                      </svg></a></li>
-                </ul>
-                <ul class="menu">
-                  <li class="menu__item"><a class="menu__link" href="my-works.html">Мои работы</a></li>
-                  <li class="menu__item"><a class="menu__link" href="about.html">Обо мне</a></li>
-                  <li class="menu__item"><a class="menu__link" href="blog.html">Блог</a></li>
-                </ul>
+          <div class="block-info">
+            <div class="about-me__wrapper">
+              <div class="about-me about-me_welcome">
+                <div class="about-me__img-rounded img-rounded img-rounded_size_big"><img src="assets/images/avatar.png" alt="avatar"></div>
+                <h4 class="h4 about-me__title">Андрей Азимов</h4><span class="about-me__description">Личный сайт веб-разработчика</span>
               </div>
-              <div class="login__wrapper">
-                <div class="login">
-                  <h3 class="login__title h3">Авторизуйтесь</h3>
-                  <div class="input-wrapper input_text">
-                    <input class="input input_login" type="text" placeholder="Логин">
-                  </div>
-                  <div class="input-wrapper input_password">
-                    <input class="input input_login" type="password" placeholder="Пароль">
-                  </div>
-                  <div class="checkbox"> 
-                    <div class="checkbox__human">
-                      <input type="checkbox" id="human">
-                      <label for="human">Я человек</label>
+              <ul class="socials">
+                <li class="socials__item socials__item_green"><a class="socials__link" href="https://vk.com/sakhalinkholmsk"> 
+                    <svg class="socials__img soc-icon">
+                      <use xlink:href="assets/images/sprite.svg#vk"></use>
+                    </svg></a></li>
+                <li class="socials__item socials__item_green"><a class="socials__link" href="https://github.com/GvardX"> 
+                    <svg class="socials__img soc-icon">
+                      <use xlink:href="assets/images/sprite.svg#github"></use>
+                    </svg></a></li>
+                <li class="socials__item socials__item_green"><a class="socials__link" href="https://vk.com/sakhalinkholmsk"> 
+                    <svg class="socials__img soc-icon">
+                      <use xlink:href="assets/images/sprite.svg#in"></use>
+                    </svg></a></li>
+              </ul>
+              <ul class="menu">
+                <li class="menu__item"><a class="menu__link" href="my-works.html">Мои работы</a></li>
+                <li class="menu__item"><a class="menu__link" href="about.html">Обо мне</a></li>
+                <li class="menu__item"><a class="menu__link" href="blog.html">Блог</a></li>
+              </ul>
+            </div>
+            <div class="login__wrapper active-sign">
+              <div class="login">
+                <h3 class="login__title h3 main-title line-h3">Авторизуйтесь</h3>
+                <form class="main-form">
+                  <div class="main-form__dates">
+                    <div class="input-wrapper input_text">
+                      <input class="input input_login" type="text" placeholder="Логин" id="user-name">
                     </div>
-                    <div class="checkbox__robot"><span class="span">Вы точно не робот?</span>
-                      <div class="robot-radio">
-                        <div class="robot-radio__yes">
-                          <input type="checkbox" id="yes">
-                          <label for="yes">Да</label>
-                        </div>
-                        <div class="robot-radio__not-sure">    
-                          <input type="checkbox" id="not-sure">
-                          <label for="not-sure">Не уверен</label>
+                    <div class="input-wrapper input_password">
+                      <input class="input input_login" type="password" placeholder="Пароль" id="user-pass">
+                    </div>
+                    <div class="checkbox"> 
+                      <div class="checkbox__human item-checkbox">
+                        <input type="checkbox" id="human">
+                        <label for="human">Я человек</label>
+                      </div>
+                      <div class="checkbox__robot"><span class="span">Вы точно не робот?</span>
+                        <div class="robot-radio">
+                          <div class="robot-radio__yes item-checkbox">
+                            <input type="checkbox" id="yes">
+                            <label for="yes">Да</label>
+                          </div>
+                          <div class="robot-radio__not-sure item-checkbox">    
+                            <input type="checkbox" id="not-sure">
+                            <label for="not-sure">Не уверен</label>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <ul class="menu">
-                  <li class="menu__item"><a class="menu__link" href="my-works.html">Мои работы</a></li>
-                  <li class="menu__item"><a class="menu__link" href="about.html">Обо мне</a></li>
-                  <li class="menu__item"><a class="menu__link" href="blog.html">Блог</a></li>
-                </ul>
+                  <ul class="menu">
+                    <li class="menu__item to-main"><a class="menu__link" href="#">На главную</a></li>
+                    <li class="menu__item">
+                      <button class="menu__button" type="submit">Войти</button>
+                    </li>
+                  </ul>
+                </form>
               </div>
             </div>
           </div>
